@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head><meta charset="UTF-8"><title>Cadastrar Produto</title></head>
+    <body>
+        <h1>Cadastrar Produto</h1>
+        <form action="/produto/salvar" method="post">
+            <label>Nome: <input type="text" name="nome" required /></label><br>
+            <label>Descrição: <input type="text" name="descricao" required /></label><br>
+            <label>Preço: <input type="number" step="0.01" name="preco" required /></label><br>
+            <label>Estoque: <input type="number" name="estoque" required /></label><br>
+            <button type="submit" onclick="window.location.href='/produto/meus'">Cadastrar</button>
+            <button type="button" onclick="window.location.href='/produto/meus'">Cancelar</button>
+        </form>
+    </body>
+</html>
